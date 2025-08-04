@@ -1,0 +1,50 @@
+import { useCallback, useMemo } from "react";
+import clsx from "clsx";
+
+function Button(props) {
+  const {
+    size = "small", // Possible values: "small" and "large"
+    icon, // Optional icon
+    iconPosition = "left", // Possible values: "left" and "right"
+    type = "button", // Optional type attribute, by default has "button" type
+    loading,
+    disabled,
+    loadingText = "Loading...",
+    onClick,
+    children,
+  } = props;
+
+  const handleClick = useCallback(() => {
+    if (onClick) {
+      // Although the `onClick` prop is not supposed to be optional,
+      // we cannot ensure that it will always be passed as a prop.
+      // So it's better to wrap it in an `if` check.
+      onClick();
+    }
+  }, [onClick]);
+
+  const buttonClass = useMemo(
+    () =>
+      // Apply classes related to size, loading and disabled states,
+      // and hover only when loading and disabled states are inactive
+      clsx("btn", size, { loading, disabled, hover: !loading && !disabled }),
+    [size, loading, disabled]
+  );
+
+  return (
+    <button
+      type={type}
+      className={buttonClass}
+      onClick={handleClick}
+      disabled={disabled || loading} // Disable click when either loading or disabled states are active
+    >
+      {/* Render icon (if present) only when iconPosition is "left" and it's not loading */}
+      {!loading && icon && iconPosition === "left" && icon}
+      {loading ? loadingText : children}
+      {/* Render icon (if present) only when iconPosition is "right" and it's not loading */}
+      {!loading && icon && iconPosition === "right" && icon}
+    </button>
+  );
+}
+
+export default Button;

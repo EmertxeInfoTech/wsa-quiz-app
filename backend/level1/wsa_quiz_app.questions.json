@@ -1,0 +1,280 @@
+[{
+  "_id": {
+    "$oid": "656ad079a84fa0a39043bf49"
+  },
+  "question": "Who is the prime minister of India",
+  "options": [
+    {
+      "id": 1,
+      "value": "JD Pawar"
+    },
+    {
+      "id": 2,
+      "value": "Me"
+    },
+    {
+      "id": 3,
+      "value": "Narendra More"
+    },
+    {
+      "id": 1,
+      "value": "Narendra Modi"
+    }
+  ],
+  "answer": {
+    "id": 1,
+    "value": "Narendra Modi"
+  }
+},
+{
+  "_id": {
+    "$oid": "6583071b0b1de0241f6fe738"
+  },
+  "question": "Who is JD",
+  "options": [
+    {
+      "id": 1,
+      "value": "I"
+    },
+    {
+      "id": 2,
+      "value": "Me"
+    },
+    {
+      "id": 3,
+      "value": "None"
+    },
+    {
+      "id": 1,
+      "value": "JD"
+    }
+  ],
+  "answer": {
+    "id": 1,
+    "value": "I"
+  }
+},
+{
+  "_id": {
+    "$oid": "658c48979767c5b13ffa12b2"
+  },
+  "question": "three",
+  "options": [
+    {
+      "id": 1,
+      "value": "I"
+    },
+    {
+      "id": 2,
+      "value": "Me"
+    },
+    {
+      "id": 3,
+      "value": "None"
+    },
+    {
+      "id": 1,
+      "value": "JD"
+    }
+  ],
+  "answer": {
+    "id": 1,
+    "value": "I"
+  }
+},
+{
+  "_id": {
+    "$oid": "658c48a49767c5b13ffa12b3"
+  },
+  "question": "four",
+  "options": [
+    {
+      "id": 1,
+      "value": "I"
+    },
+    {
+      "id": 2,
+      "value": "Me"
+    },
+    {
+      "id": 3,
+      "value": "None"
+    },
+    {
+      "id": 1,
+      "value": "JD"
+    }
+  ],
+  "answer": {
+    "id": 1,
+    "value": "I"
+  }
+},
+{
+  "_id": {
+    "$oid": "658c48a89767c5b13ffa12b4"
+  },
+  "question": "five",
+  "options": [
+    {
+      "id": 1,
+      "value": "I"
+    },
+    {
+      "id": 2,
+      "value": "Me"
+    },
+    {
+      "id": 3,
+      "value": "None"
+    },
+    {
+      "id": 1,
+      "value": "JD"
+    }
+  ],
+  "answer": {
+    "id": 2,
+    "value": "B"
+  }
+},
+{
+  "_id": {
+    "$oid": "658c48ad9767c5b13ffa12b5"
+  },
+  "question": "six",
+  "options": [
+    {
+      "id": 1,
+      "value": "I"
+    },
+    {
+      "id": 2,
+      "value": "Me"
+    },
+    {
+      "id": 3,
+      "value": "None"
+    },
+    {
+      "id": 1,
+      "value": "JD"
+    }
+  ],
+  "answer": {
+    "id": 1,
+    "value": "I"
+  }
+},
+{
+  "_id": {
+    "$oid": "658c48b29767c5b13ffa12b6"
+  },
+  "question": "seven",
+  "options": [
+    {
+      "id": 1,
+      "value": "I"
+    },
+    {
+      "id": 2,
+      "value": "Me"
+    },
+    {
+      "id": 3,
+      "value": "None"
+    },
+    {
+      "id": 1,
+      "value": "JD"
+    }
+  ],
+  "answer": {
+    "id": 1,
+    "value": "I"
+  }
+},
+{
+  "_id": {
+    "$oid": "658c48b69767c5b13ffa12b7"
+  },
+  "question": "eight",
+  "options": [
+    {
+      "id": 1,
+      "value": "I"
+    },
+    {
+      "id": 2,
+      "value": "Me"
+    },
+    {
+      "id": 3,
+      "value": "None"
+    },
+    {
+      "id": 1,
+      "value": "JD"
+    }
+  ],
+  "answer": {
+    "id": 1,
+    "value": "I"
+  }
+},
+{
+  "_id": {
+    "$oid": "658c48bb9767c5b13ffa12b8"
+  },
+  "question": "nine",
+  "options": [
+    {
+      "id": 1,
+      "value": "I"
+    },
+    {
+      "id": 2,
+      "value": "Me"
+    },
+    {
+      "id": 3,
+      "value": "None"
+    },
+    {
+      "id": 1,
+      "value": "JD"
+    }
+  ],
+  "answer": {
+    "id": 1,
+    "value": "I"
+  }
+},
+{
+  "_id": {
+    "$oid": "658c48bf9767c5b13ffa12b9"
+  },
+  "question": "ten",
+  "options": [
+    {
+      "id": 1,
+      "value": "I"
+    },
+    {
+      "id": 2,
+      "value": "Me"
+    },
+    {
+      "id": 3,
+      "value": "None"
+    },
+    {
+      "id": 1,
+      "value": "JD"
+    }
+  ],
+  "answer": {
+    "id": 1,
+    "value": "I"
+  }
+}]
