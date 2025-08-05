@@ -6,13 +6,13 @@ function Button(props) {
     size = "small", // Possible values: "small" and "large"
     icon, // Optional icon
     iconPosition = "left", // Possible values: "left" and "right"
-    type = "button", // Optional type attribute, by default has "button" type
+    // type = "button", // Optional type attribute, by default has "button" type
     disabled,
     loading,
     loadingText = "Loading...",
     onClick,
     className, // Additional classes
-    tabIndex = 0, // If tab index is not provided, will use default value of 0
+    // tabIndex = 0, // If tab index is not provided, will use default value of 0
     children,
   } = props;
 
