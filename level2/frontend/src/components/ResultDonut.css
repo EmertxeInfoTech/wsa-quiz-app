@@ -1,0 +1,26 @@
+/*To make sure our custom styling gets applied on the circular progress bar,
+* we have to supply a separate css file containing our custom classes,
+* which will override the styles imported from the library. */
+
+.circular-progress-wrapper {
+  --primary-colour: #127029;
+  --secondary-colour: #cce9d3;
+  align-self: center;
+  width: 16.6875rem; /* 267px */
+  height: 16.6875rem; /* 267px */
+  font-weight: 600;
+  color: var(--primary-colour);
+}
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: var(--primary-colour);
+}
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: var(--secondary-colour);
+}
+.circular-progress-wrapper .score {
+  font-size: 6.25rem; /* 100px */
+  line-height: 6.25rem; /* 100px */
+}
+.circular-progress-wrapper .score-label {
+  font-size: 1.25rem; /* 20px */
+}

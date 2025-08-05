@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "e8764c9f-8229-4ac1-a716-ade77512d176",
+		"name": "4. Online Quiz App - Advance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28768372"
+	},
+	"item": [
+		{
+			"name": "Get Questions for User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWYxOGZkYjY5OTI3Njc3ZGE1NDc3ODgiLCJpYXQiOjE3MTAzMjk4MzYsImV4cCI6MTcxMDM0NzgzNn0.0Z3UiI-HgA3G8EgwIaZBv_Ah1v-5JDiRL1F_IGf2A_Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/v1/questions",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRlZDBkODMxNjAwNzQ5ZTExMDMyYzAiLCJpYXQiOjE3MTAzMzAzMjIsImV4cCI6MTcxMDM0ODMyMn0.yfkEu2SZxwRQ2DmSDjrg2gRj8qstr3OMIuua9XW9rf4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"questionId\": \"656ad079a84fa0a39043bf49\",\n    \"answer\": {\n        \"id\": 1,\n        \"value\": \"Narendra Modi\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/v1/questions/validate-answer",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"questions",
+						"validate-answer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Quiz",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZlMGU0OGMwM2ZkOTM5NGE5ZTk2NWIiLCJpYXQiOjE3MDM4Mjk1MDYsImV4cCI6MTcwMzg0NzUwNn0.Su4or5IjsSxvgoRPd8tVeULHx0zHXJYTr_nUz8SHnT0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"questionId\": \"6583071b0b1de0241f6fe738\",\n    \"answer\": {\n        \"id\": 1,\n        \"value\": \"I\"\n    },\n    \"updateQuestionStatus\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/v1/quiz/submit",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"quiz",
+						"submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"JD\",\n    \"email\": \"jaydeep1012@gmail.com\",\n    \"phone\": \"7276894525\",\n    \"password\": \"jdpawar\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/v1/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"jaydeep10@gmail.com\",\n    \"password\": \"jdpawar\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/v1/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Quiz Attempts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWYxOGZkYjY5OTI3Njc3ZGE1NDc3ODgiLCJpYXQiOjE3MTA3NDA5NTAsImV4cCI6MTcxMDc1ODk1MH0.2P7vVDij3QDNPpcXlN_LMlH2ecpWcwNb_uZvcD3zDNE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/v1/user/quiz-attempts",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"user",
+						"quiz-attempts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
