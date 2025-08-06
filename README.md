@@ -79,9 +79,8 @@ Each level contains its own **frontend** and **backend** codebases. You must run
 ## 📌 How to Run Locally
 
 1. **Clone the Repository:**  
-   ```bash
-   git clone https://github.com/EmertxeInfoTech/wsa-quiz-app.git
-   cd wsa-quiz-app
+   **git** clone https://github.com/EmertxeInfoTech/wsa-quiz-app.git<br>
+   **cd** wsa-quiz-app<br>
    
 2. **Install Dependencies:** <br>
    **cd** level1/frontend<br>
